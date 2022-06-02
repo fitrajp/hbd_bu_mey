@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:image" content="https://agiftidea.com/wp-content/uploads/2020/04/birthday-celebration.jpeg" />
+    <meta property="og:description" content="Silahkan Cek Kartu Undangan!" />
+    <meta property="og:title" content="Selamat Ulang Tahun!" />
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/gift/22649-9-birthday-gift.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet" />
+
+    <title>Kartu Ucapan!</title>
+    <style>
+      * {
+        font-family: "Yusei Magic", sans-serif;
+      }
+      body {
+        background-color: #e8344e;
+      }
+      .amplop {
+        width: 200px;
+        height: 200px;
+
+        background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+        background-size: cover;
+        background-position: center;
+
+        margin: 100px auto 40px auto;
+      }
+      .pesan-amplop {
+        color: white;
+        text-align: center;
+      }
+      .surat-keluar {
+        display: block;
+        cursor: pointer;
+      }
+      .surat-masuk {
+        display: none;
+      }
+      .gambar {
+        width: 200px;
+        height: 200px;
+        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon7.gif");
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin: 75px auto 20px auto;
+        box-shadow: 0px 0px 15px 0px black;
+        cursor: pointer;
+      }
+      .judul-surat {
+        color: white;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 30px;
+      }
+      .pesan {
+        background-color: ivory;
+        width: 400px;
+        margin: 8px auto 0 auto;
+        padding: 22px;
+        color: brown;
+        box-shadow: 0px 0px 15px 0px black;
+      }
+
+      @media screen and (max-width: 760px) {
+        .pesan {
+          width: 300px;
+          padding: 14px;
+        }
+        .gambar {
+          width: 140px;
+          height: 140px;
+          margin: 45px auto 20px auto;
+        }
+        .judul-surat {
+          font-size: 22px;
+        }
+        .amplop {
+          width: 150px;
+          height: 150px;
+          margin: 180px auto 40px auto;
+        }
+      }
+    </style>
+    <script>
+      function buka_surat() {
+        document.getElementsByClassName("surat-keluar")[0].style.display = "none";
+        document.getElementsByClassName("surat-masuk")[0].style.display = "block";
+      }
+
+      function klik_gambar() {
+        alert("اَللهُمَّ اِنَّا نَسْأَلُكَ سَلاَمَةً فِى الدِّيْنِ وَعَافِيَةً فِى الْجَسَدِ وَزِيَادَةً فِى الْعِلْمِ وَبَرَكَةً فِى الرِّزْقِ وَتَوْبَةً قَبْلَ الْمَوْتِ وَرَحْمَةً عِنْدَ الْمَوْتِ وَمَغْفِرَةً بَعْدَ الْمَوْتِ");
+        alert("“Ya Allah kami memohon kepada-Mu keselamatan dalam agama, dan kesejahteraan (kesehatan) pada tubuh. Dan penambahan ilmu, keberkahan rezeki, taubat sebelum mati, rahmat di waktu mati, dan keampunan sesudah mati.”");
+        alert("aamiin allahumma aamiin");
+        alert;
+        alert("jangan lupa subrek youtubenya bu meylani");
+        window.location.href = "https://www.youtube.com/channel/UCe-7iety7WGklAGCCy1lXbg";
+      }
+    </script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+  </head>
+  <body>
+    <div class="surat-keluar" onclick="buka_surat()">
+      <div class="amplop"></div>
+      <h2 class="pesan-amplop">Silahkan Klik Amplop Ini !!!</h2>
+    </div>
+
+    <div class="surat-masuk">
+      <div class="gambar" onclick="klik_gambar()"></div>
+      <h1 class="judul-surat">Barakallah Fii Umrik!!!</h1>
+      <div class="pesan">
+        Semoga segala cita - cita tercapai dan diberi kesehatan <br />
+        Aamiin <br />
+        <br />
+        lanjut klik gambar animasinya bu!
+      </div>
+    </div>
+  </body>
+</html>
